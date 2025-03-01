@@ -494,8 +494,7 @@ body {
   color: var(--primary-color);
 }
 
-.news-info {
-}
+
 .news-desc {
   text-align: left;
   color: #777;
@@ -581,8 +580,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.footer-left {
-}
+
 
 .logo-svg {
   width: 1.5rem;
