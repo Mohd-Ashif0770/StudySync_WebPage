@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+.Container {
+  height: 100%;
+  width: 100%;
+  overflow-x: none;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+.navContainer {
+  width: 100vw;
+  /* background-color: rgb(80, 164, 164); */
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+}
+#navList {
+  width: 100%;
+  padding: 15px;
+  list-style: none;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#navLogo {
+  color: azure;
+  font-size: 2.8rem;
+}
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+#navItems {
+  display: flex;
+  gap: 40px;
+}
+
+/* ! Footer Styling */
+
+.footerBox {
+  width: 100%;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+  text-align: center;
+  min-height: 40px;
+}
+.footerBox p {
+  color: azure;
+  font-size: 2rem;
+}
+
+/* ! Main content */
+
+.ContentBox {
+  width: 70%;
+  margin: auto;
+  background-color: azure;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 20px;
+  box-shadow: 0px 0px 30px black;
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rightBox img {
+  height: 270px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px black;
+}
+.rightBox {
+  position: relative;
+  transition: all 0.4s linear 0.1s;
+}
+
+.rightBox:hover {
+  transform: scale(1.1);
+}
+.leftBox h2 {
+  font-size: 1.6rem;
+  padding-top: 10px;
+}
+.leftBox h3 {
+  font-size: 1.3rem;
+  padding-top: 10px;
+}
+.ingBox {
+  font-size: 1.2rem;
+  padding-left: 25px;
+}
+.recipeBox {
+  font-size: 1.1rem;
+  padding-left: 25px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(61, 58, 58, 0.429);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+.overlay span {
+  color: white;
+  font-size: 1.2rem;
+}
+.overlay:hover {
+  opacity: 1;
+}
